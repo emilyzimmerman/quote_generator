@@ -1,0 +1,4 @@
+
+require "./lib/quote_generator.rb"
+
+CLI.new.run
