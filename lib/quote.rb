@@ -1,10 +1,10 @@
 class Quote 
-    attr_accessor :text, :author, :tags 
+    attr_accessor :content, :author, :tags 
 
     @@quotes = []
 
     def initialize (quote_content, quote_author, quote_tags)
-        @text = quote_content
+        @content = quote_content
         @author = quote_author
         @tags = quote_tags
 
@@ -17,12 +17,10 @@ class Quote
     def self.all 
         return @@quotes
     end
-
-
 end
 
-random_quote = Quote.new("This is a quote", "James Bond", "Action")
+# random_quote = Quote.new("This is a test", "Joe", "work")
 
-# puts "Here's the quotes: " + random_quote.text
+# puts "Here's the quotes: " + random_quote.content
 
-# puts Quote.all
+puts Quote.all

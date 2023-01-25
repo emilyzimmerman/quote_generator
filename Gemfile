@@ -14,3 +14,5 @@ gem 'open-uri'
 gem 'nokogiri'
 
 gem "pry"
+
+gem "bcrypt"
